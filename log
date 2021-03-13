@@ -1,0 +1,49 @@
+Sat Mar 13 23:36:11 UTC 2021: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c:20:1: error: data definition has no type or storage class [-Werror]
+ suma(a, b, c);
+ ^~~~
+exercises.c:20:1: error: type defaults to ‘int’ in declaration of ‘suma’ [-Werror=implicit-int]
+exercises.c:20:1: error: parameter names (without types) in function declaration [-Werror]
+exercises.c:20:1: error: conflicting types for ‘suma’
+exercises.c:14:6: note: previous definition of ‘suma’ was here
+ void suma(int a, int b, int * c) {
+      ^~~~
+exercises.c:21:8: error: expected declaration specifiers or ‘...’ before string constant
+ printf("El valor es %d.\n", contador);
+        ^~~~~~~~~~~~~~~~~~~
+exercises.c:21:29: error: unknown type name ‘contador’
+ printf("El valor es %d.\n", contador);
+                             ^~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+Sat Mar 13 23:37:11 UTC 2021: 
+ exercises.c | 10 ++++++++--
+ 1 file changed, 8 insertions(+), 2 deletions(-)
+test.c:250:5: error: redefinition of ‘main’
+ int main( int argc, char *argv[] ) {
+     ^~~~
+In file included from test.c:5:0:
+exercises.c:17:5: note: previous definition of ‘main’ was here
+ int main(){
+     ^~~~
+Compilation failed
+Sat Mar 13 23:37:28 UTC 2021: 
+ exercises.c | 11 +++++++++--
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+test.c:250:5: error: redefinition of ‘main’
+ int main( int argc, char *argv[] ) {
+     ^~~~
+In file included from test.c:5:0:
+exercises.c:17:5: note: previous definition of ‘main’ was here
+ int main(){
+     ^~~~
+Compilation failed
+Sat Mar 13 23:41:44 UTC 2021: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|6
+total_score: 10/70
+3f79870

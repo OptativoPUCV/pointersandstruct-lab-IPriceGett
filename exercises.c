@@ -89,6 +89,9 @@ Vector * crearVector(int n) {
   Vector * request = (Vector *)malloc(1);
   request->capacidad = n;
   request->datos = (int *)malloc(n);
+  for(int i=0;i<n;i++){
+    request->datos[i] = 0;
+  }
   return request;
 }
 

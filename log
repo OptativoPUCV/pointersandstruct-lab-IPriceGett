@@ -70,3 +70,9 @@ Sun Mar 14 01:14:42 UTC 2021:
  tests:  5|2
 total_score: 50/70
 8cb2635
+Sun Mar 14 01:18:05 UTC 2021: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+ tests:  4|3
+total_score: 40/70
+074aafc

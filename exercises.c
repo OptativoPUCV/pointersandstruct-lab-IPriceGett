@@ -37,8 +37,9 @@ Utilice la función sumaN.
 */
 
 void sumaNultimos(int a[], int n, int m, int * suma) {
+  int inicio=0;
     for(int i=n-1; i>=n/2;i--){
-      int inicio=0;
+      
       int aux;
       aux = a[inicio];
       a[inicio]=a[i];
@@ -85,8 +86,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  Vector * request;
-  request = malloc(sizeof(Vector)*1);
+  Vector * request = NULL;
   request->capacidad = n;
   request->datos = (int *)malloc(sizeof(n));
   return request;

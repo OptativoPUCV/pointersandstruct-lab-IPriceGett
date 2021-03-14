@@ -86,9 +86,9 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  Vector * request = NULL;
+  Vector * request = (Vector *)malloc(1);
   request->capacidad = n;
-  request->datos = (int *)malloc(sizeof(n));
+  request->datos = (int *)malloc(n);
   return request;
 }
 
